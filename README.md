@@ -9,3 +9,5 @@ O sistema será desenvolvido utilizando os conceitos fundamentais da Programaç�
 Os dados do sistema serão armazenados temporariamente em estruturas como ArrayList, permitindo realizar as operações de CRUD (inserção, busca, atualização e remoção), conforme o desenvolvimento do projeto.
 
 O objetivo final é criar uma aplicação simples e funcional que represente o gerenciamento básico de uma academia, permitindo que os usuários do sistema organizem as informações de alunos, professores, treinos e exercícios de maneira prática e estruturada.</h6>
+
+<h1>Registro</h1>
