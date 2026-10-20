@@ -183,6 +183,13 @@ classDiagram
         -buscarTexto() void
         -atualizar() void
         -remover() void
+        -tipo() int
+        -repositorio(int t) Repositorio
+        -inteiro(String msg) int
+        -decimal(String msg) double
+        -texto(String msg) String
+        -resultado(boolean ok) void
+        -ausente() void
     }
 
     Registro <|-- Pessoa
@@ -207,7 +214,7 @@ classDiagram
     Repositorio ..> Registro : T extends
     estrutura --> "7" Repositorio : gerencia
 
-    note for Registro "ABSTRAÇÃO: Registro e Pessoa são abstratas e reúnem o que é comum (id, dados pessoais)."
-    note for Pessoa "ENCAPSULAMENTO: atributos privados (-) com acesso por getters e setters públicos."
-    note for Professor "HERANÇA: Aluno e Professor herdam de Pessoa; Presencial e Online herdam de Professor; todas herdam de Registro."
-    note for ProfessorOnline "POLIMORFISMO: dados() é sobrescrito em cada subclasse e exibirDados() chama a versão do objeto."
+note for Registro "ABSTRAÇÃO:<br/>Registro e Pessoa são abstratas<br/>e reúnem o que é comum."
+note for Pessoa "ENCAPSULAMENTO:<br/>atributos privados (-)<br/>e getters/setters públicos (+)."
+note for Professor "HERANÇA:<br/>Aluno e Professor herdam de Pessoa;<br/>Presencial e Online herdam de Professor."
+note for ProfessorOnline "POLIMORFISMO:<br/>dados() é sobrescrito<br/>em cada subclasse.”
