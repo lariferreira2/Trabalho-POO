@@ -9,6 +9,7 @@ classDiagram
         +dados() String
         +exibirDados() void
     }
+
     class Pessoa {
         <<abstract>>
         -String nome
@@ -213,7 +214,7 @@ classDiagram
     Repositorio ..> Registro : T extends
     estrutura --> "7" Repositorio : gerencia
 
-note for Registro "ABSTRAÇÃO:<br/>Registro e Pessoa são abstratas<br/>e reúnem o que é comum."
-note for Pessoa "ENCAPSULAMENTO:<br/>atributos privados (-)<br/>e getters/setters públicos (+)."
-note for Professor "HERANÇA:<br/>Aluno e Professor herdam de Pessoa;<br/>Presencial e Online herdam de Professor."
-note for ProfessorOnline "POLIMORFISMO:<br/>dados() é sobrescrito<br/>em cada subclasse.”
+    note for Registro "ABSTRAÇÃO:<br/>Registro e Pessoa são abstratas<br/>e reúnem o que é comum."
+    note for Pessoa "ENCAPSULAMENTO:<br/>atributos privados (-)<br/>e getters/setters públicos (+)."
+    note for Professor "HERANÇA:<br/>Aluno e Professor herdam de Pessoa;<br/>Presencial e Online herdam de Professor."
+    note for ProfessorOnline "POLIMORFISMO:<br/>dados() é sobrescrito<br/>em cada subclasse.”
